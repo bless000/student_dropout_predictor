@@ -605,14 +605,5 @@ def main():
 
 if __name__ == '__main__':
     main()
-   
-content = open('app.py', 'r', encoding='utf-8').read()
-remove = '''        st.markdown(f\"\"\"
-        <div style=\"background:linear-gradient(135deg,{PURPLE},{PURPLE_L});border-radius:12px;padding:16px;margin-bottom:16px;\">
-          <div style=\"font-family:'Sora',sans-serif;font-weight:700;color:white;font-size:.88rem;\">Upgrade to Pro</div>
-          <div style=\"color:#E0E7FF;font-size:.76rem;margin-top:4px;\">Get access to all features including real-time alerts.</div>
-        </div>\"\"\", unsafe_allow_html=True)'''
-content = content.replace(remove, '')
-open('app.py', 'w', encoding='utf-8').write(content)
-print('Done!')
+
 
